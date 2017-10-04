@@ -15,7 +15,7 @@ echo "Checking out branch ${GIT_CHECKOUT} ..."
 git checkout ${GIT_CHECKOUT}
 
 echo "Fetching dependencies ... "
-$(${NPM_INSTALL_COMMAND})
+npm ${NPM_INSTALL_COMMAND}
 
 echo "Starting app ..."
-$(${NPM_RUN_COMMAND})
+npm ${NPM_RUN_COMMAND}
