@@ -4,7 +4,7 @@ set -e
 
 LOCAL_GIT_FOLDER="/sources"
 
-if [ ! -d "${LOCAL_GIT_FOLDER}"]; then
+if [ ! -d "${LOCAL_GIT_FOLDER}" ]; then
   echo "Cloning repository ${GIT_URL} ..."
   git clone ${GIT_URL} ${LOCAL_GIT_FOLDER}
 fi
